@@ -30,7 +30,7 @@ Este grupo es una oportunidad de conocer otros desarrolladores e ingenieros de o
 Puedes subscribirte para recibir notificaciones de los eventos en http://www.meetup.com/devOps-Costa-Rica 
 
 ## Ideas y consultas
-Utilizamos el [issue tracker](https://github.com/devOpsCR/devopscr.github.io/issues) como foro para conversar sobre ideas y responder preguntas relacionadas a devOps Costa Rica
+Utilizamos el [issue tracker](https://github.com/devOpsCR/foro/issues) como foro para conversar sobre ideas y responder preguntas relacionadas a devOps Costa Rica
 
 ## Cómo puedo organizar o proponer un meetup?
 
