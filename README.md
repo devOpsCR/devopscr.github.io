@@ -1,6 +1,6 @@
 # DevOps Costa Rica
 
-DevOps Costa Rica Meetup es un grupo de profesionales en desarrollo de software y tecnologías de información que fomenta el aprendizaje y el intercambio de información sobre el movimiento DevOps - cultura, prácticas y herramientas .
+DevOps Costa Rica Meetup es un grupo de profesionales en desarrollo de software y tecnologías de información que fomenta el aprendizaje y el intercambio de información sobre el movimiento DevOps - cultura, prácticas y herramientas.
 
 Cubriremos todo lo relacionado con DevOps incluyendo automatización, orquestación, contenedores, virtualización, servicio de descubrimiento, integración continua y entrega continua.
 
@@ -44,6 +44,6 @@ devOpsCR es una comunidad abierta, todos los miembros pueden proponer y organiza
 - Recursos necesarios.
 
 ## Organización
-- [Gabo Esquivel](http://gaboesquivel.com/about)
-- [Leonardo Murillo](https://cr.linkedin.com/pub/leonardo-murillo/48/107/698)
-- [Jeffrey Esquivel](https://cr.linkedin.com/in/jeffreyesquivel)  
+- [Gabo Esquivel](http://gaboesquivel.com/about) - [@gaboesquivel](https://twitter.com/gaboesquivel)
+- [Leonardo Murillo](https://cr.linkedin.com/pub/leonardo-murillo/48/107/698) - [@murillodigital](http://twitter.com/murillodigital)
+- [Jeffrey Esquivel](https://cr.linkedin.com/in/jeffreyesquivel)- [@jeffesquivels](https://twitter.com/jeffesquivels)
