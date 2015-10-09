@@ -1,0 +1,43 @@
+{
+  "posts":{
+    "hello-world": {
+      "title": "Hello World",
+      "description": "Problems look mighty small from 150 miles up",
+      "author": "gaboesquivel",
+      "date":"2015-09-13T18:39:41.418Z",
+      "backgroundImage":"/assets/images/post-bg.jpg"
+    },
+    "hello-markdown": {
+      "title": "Markdown Post",
+      "description": "Intuitive design is how we give the user new superpowers",
+      "author": "murillodigital",
+      "date":"2015-09-14T18:39:41.418Z",
+      "backgroundImage":"/assets/images/post-bg.jpg"
+    }
+  },
+  "authors":{
+    "gaboesquivel":{
+      "name": "Gabo Esquivel",
+      "bio": "Software Engineer, JavaScript Consultant. Organizer of @CostaRicaJS and @DevOpsCR",
+      "twitter": "gaboesquivel",
+      "github": "gaboesquivel",
+      "avatar": "https://avatars3.githubusercontent.com/u/391270?v=3&s=460",
+      "website": "http://gaboesquivel.com"
+    },
+    "murillodigital":{
+      "name": "Leornardo Murillo",
+      "bio": "DevOps Lead and Sr. Engineering Advisor with a blend of technical, personal and business skills effective for implementing bleeding edge technological concepts.",
+      "twitter": "murillodigital",
+      "github": "murillodigital",
+      "avatar": "https://avatars1.githubusercontent.com/u/1219288?v=3&s=460",
+      "website": "https://about.me/leonardomurillo"
+    },
+    "jeffesquivels":{
+      "name": "Jeffrey Esquivel",
+      "bio": "DevOps Lead and Sr. Engineer at @highfidelityinc & @coffeeandpower - passionate about technological awesome",
+      "twitter": "jeffesquivels",
+      "github": "jeffesquivels",
+      "avatar": "https://pbs.twimg.com/profile_images/609759111727611904/5GaJ5qOD_400x400.jpg"
+    }
+  }
+}

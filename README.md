@@ -1,49 +1,158 @@
-# DevOps Costa Rica
+# Website DevOps Costa Rica
 
-DevOps Costa Rica Meetup es un grupo de profesionales en desarrollo de software y tecnologías de información que fomenta el aprendizaje y el intercambio de información sobre el movimiento DevOps - cultura, prácticas y herramientas.
+Este sitio utiliza [Harp Server](http://harpjs.com/) (a static web server with built-in pre-processing build with NodeJS).
+Y esta el diseño basado en el template [Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/)_
 
-Cubriremos todo lo relacionado con DevOps incluyendo automatización, orquestación, contenedores, virtualización, servicio de descubrimiento, integración continua y entrega continua.
+## Index
 
-## Que es DevOps?
+- [How to use it?](#how-to-use-it)
+    - [On your own computer](#on-your-own-computer)
+- [Controlling your content](#controlling-your-content)
+- [Adding new posts](#adding-new-posts)
+- [Adding new pages](#adding-new-pages)
+- [TODOs](#todos)
+- [Support](#support)
+- [License](#license)
 
-DevOps es un movimiento de desarrolladores de software e ingenieros de operaciones apasionados que quieren derribar los muros y mejorar la relación entre entre desarrollo, operaciones y el resto de la empresa.
+---
 
-DevOps es una respuesta a la interdependencia del desarrollo de software y las operaciones IT. Su objetivo es ayudar a una organización a producir productos y servicios software rápidamente.
+## How to use it?
 
-DevOps se pueden resumir en 4 puntos clave , conocidos como CAMS :
+### On your own computer
 
-### Cultura
-Personas por encima de la tecnología. Si usted no tiene la cultura, todos los intentos de automatización serán infructuosos.
+1. [Install Harp Server](http://harpjs.com/docs/environment/install) on your computer
+2. Open your terminal and start a new project:
 
-### Automatización
-Este es uno de los lugares en cual se inicia una vez que entienda su cultura, uniendo un tejido de automatización que refleja su cultura y el conocimiento compartido.
+````
+$ git clone git@github.com:devOpsCR/devopscr.github.io.git
+$ cd my-blog
+$ harp server -p 9966
+````
 
-### Medición
-Si no se puede medir, no se puede mejorar. Equipos haciendo DevOps con éxito medirán todo tan a menudo como sea posible: métricas de rendimiento , métricas de proceso, etc.
+Go to [http://localhost:9966](http://localhost:9966/) from your browser to see the website.
 
-### Sharing
-Compartir es el bucle de retorno en el ciclo de CAMS. Crear una cultura donde la gente comparte ideas y problemas es fundamental.
 
-## Eventos / Meetups
-Este grupo es una oportunidad de conocer otros desarrolladores e ingenieros de operaciones con ideas afines.Un grupo para profesionales, piratas informáticos, administradores e ingenieros de desarrollo y operaciones.
+## Controlling your content
 
-Puedes subscribirte para recibir notificaciones de los eventos en http://www.meetup.com/devOps-Costa-Rica 
+Harp brings you back to the basics of the web. Always keep in mind that your directory structure and file names are your URL paths.
 
-## Ideas y consultas
-Utilizamos el [issue tracker](https://github.com/devOpsCR/foro/issues) como foro para conversar sobre ideas y responder preguntas relacionadas a devOps Costa Rica
+Creating a new page is as simple as creating a new file and writing content in it.
 
-## Cómo puedo organizar o proponer un meetup?
+### `public/posts`
 
-devOpsCR es una comunidad abierta, todos los miembros pueden proponer y organizar meetups para exponer sus experiencias en algún tema relacionado a devOps y así difundir el conocimiento personal para transformarlo en conocimiento colectivo. El equipo organizador de devOps Costa Rica te ayudará con todo lo que necesites para tu meetup. Para proponer un evento puedes enviar un correo a hola@devops.co con los siguientes detalles:
+This is where your posts and their content live.
 
-- Nombre Completo.
-- Título de la charla o conferencia.
-- Duración aproximada.
-- Breve descripción de la charla o conferencia.
-- Breve descripción sobre usted (trayectoria, ocupación, etc)
-- Recursos necesarios.
+### `public/_layout.jade`
 
-## Organización
-- [Gabo Esquivel](http://gaboesquivel.com/about) - [@gaboesquivel](https://twitter.com/gaboesquivel)
-- [Leonardo Murillo](https://cr.linkedin.com/pub/leonardo-murillo/48/107/698) - [@murillodigital](http://twitter.com/murillodigital)
-- [Jeffrey Esquivel](https://cr.linkedin.com/in/jeffreyesquivel)- [@jeffesquivels](https://twitter.com/jeffesquivels)
+The layout of your site, including header, footer and sidebar. External scripts or stylesheets are included in this file. Global elements belong here as well (i.e.: header, nav, sidebar, etc.)
+
+### `public/index.jade`
+
+This is the default page when you visit your domain (i.e.: `http://localhost:9966/`). Here we build the loop that goes through your posts and shows them in the front page.
+
+### `public/assets/css/app.less`
+
+This is the place where your blog CSS should live.
+
+## Adding new posts
+
+__1__. Create a new file (`.jade`, `.ejs`, `.html` or `.md`) in the `public/posts/` directory
+
+````
+$ touch public/posts/kittens.html
+````
+
+__2__. Enter your post content in the file you just created:
+
+_public/posts/kittens.html:_
+
+````
+<h1><a href="/posts/kittens">I love kittens!</a></h1>
+<p>This is my first post using Harp!</p>
+````
+
+__3__. Open `public/posts/_data.json` and add your new post data:
+
+````
+{
+  ...                        <-- other blog posts
+  "kittens": {               <-- post slug (file name without extension)
+    "title": "Cute Kittens"  <-- post title
+  }
+  ...                        <-- other blog posts
+}
+````
+
+## Adding new pages
+
+__1__. Create a new file inside the `public` directory:
+
+````
+$ touch public/about.html
+````
+
+__2__. Enter the page content in the newly created file
+
+_public/about.html:_
+
+````
+<h1>About me</h1>
+<p>I love fotoshapz and taking pictures of foods</p>
+````
+
+__3__. Your can now access your page in your browser. I.e.: `http://localhost:9966/about`
+
+## Enabling/Disabling Comments
+
+This blog boilerplate makes it really easy to enable your visitors to leave comments on your blog posts.
+
+Open the `/harp.json` file and look for the disqus section. It should look something like this:
+
+```
+...
+"disqus": {
+  "enabled": false,
+  "shortname": ""
+}
+...
+```
+
+In the disqus configuration there are two configurable keys:
+
+`enabled`: can be `true` or `false`. Make it true to display comments and false to disable them. Make sure the value is not wrapped in quotes like this `"false"`, otherwise it will still show the comments.
+
+`shortname`: this is your shortname assigned by Disqus. [Signup for Disqus](https://disqus.com/admin/signup/) and get your own shortname, then enter it as a string (with wrapping double quotes) as the shortname value.
+
+This is what it looks like when it’s enabled:
+
+```
+...
+"disqus": {
+  "enabled": true,
+  "shortname": "jorgepedret"
+}
+...
+```
+
+## Enabling/Disabling Sitemap.xml
+
+Open the `/harp.json` file and look for the sitemap section:
+
+```
+...
+"sitemap": {
+  "enabled": true,
+  "changefreq": "daily"
+}
+...
+```
+
+Change "changefreq" to fit your blog needs. The result will be live in /sitemap.xml
+
+## Support
+
+Please [create an issue](https://github.com/devOpsCR/devopscr.github.io-issues on github’s bug tracker. Feedback and bug reports are greatly appreciated.
+
+## License
+
+MIT  

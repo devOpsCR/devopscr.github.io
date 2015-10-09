@@ -1,0 +1,19 @@
+{
+  "domains": [""],
+  "globals": {
+    "site_title": "DevOpsCR",
+    "nav_brand_name": "DevOpsCR",
+    "twitter": "devopscr",
+    "facebook": "#",
+    "github": "devopscr",
+    "site_url": "http://devopscr.github.io",
+    "disqus": {
+      "enabled": false,
+      "shortname": "devopscr"
+    },
+    "sitemap": {
+      "enabled": true,
+      "changefreq": "daily"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"rss": {
+		"layout": false
+	},
+	"sitemap": {
+		"layout": false
+	},
+	"blog":{
+		"title": "DevOpsCR Blog",
+		"subheading": "Artículos sobre DevOps",
+		"backgroundImage": "/assets/images/about-bg.jpg"
+	},
+	"index":{
+		"title": "DevOpsCR",
+		"subheading": "DevOps Meetup en Costa Rica",
+		"backgroundImage": "/assets/images/home-bg.jpg"
+	},
+	"contact":{
+		"title": "Contact US",
+		"subheading": "Have questions? We have answers (maybe).",
+		"backgroundImage": "/assets/images/contact-bg.jpg"
+	}
+}
