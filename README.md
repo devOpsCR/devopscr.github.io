@@ -32,6 +32,9 @@ Puedes subscribirte para recibir notificaciones de los eventos en http://www.mee
 ## Ideas y consultas
 Utilizamos el [issue tracker](https://github.com/devOpsCR/foro/issues) como foro para conversar sobre ideas y responder preguntas relacionadas a devOps Costa Rica
 
+#### IRC
+Nos puedes visitar en [#devopscr on irc.freenode.net](http://webchat.freenode.net/?channels=devopscr)
+
 ## Cómo puedo organizar o proponer un meetup?
 
 devOpsCR es una comunidad abierta, todos los miembros pueden proponer y organizar meetups para exponer sus experiencias en algún tema relacionado a devOps y así difundir el conocimiento personal para transformarlo en conocimiento colectivo. El equipo organizador de devOps Costa Rica te ayudará con todo lo que necesites para tu meetup. Para proponer un evento puedes enviar un correo a hola@devops.co con los siguientes detalles:
