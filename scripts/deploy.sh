@@ -38,4 +38,3 @@ echo "Cleaning up temp files"
 rm -Rf $TEMP_DIRECTORY
 
 echo "Deployed successfully."  
-exit 0
