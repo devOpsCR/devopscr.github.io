@@ -4,6 +4,7 @@ node_js:
 before_script:
 - npm install -g harp
 - chmod +x ./scripts/deploy.sh
+script: exit 0
 after_success: "./scripts/deploy.sh"
 env:
   global:
