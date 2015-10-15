@@ -1,4 +1,4 @@
-# DevOps Costa Rica - Sitio Web
+# DevOps Costa Rica
 
 DevOps Costa Rica Meetup es un grupo de profesionales en desarrollo de software y tecnologías de información que fomenta el aprendizaje y el intercambio de información sobre el movimiento DevOps - cultura, prácticas y herramientas.
 
@@ -8,7 +8,7 @@ Más información en http://devopscr.co
 Este es el repo del sitio oficial de la comunidad devOps en Costa Rica. __Es un trabajo en progreso, las contribuciones son bienvenidas.__
 
 El código del sitio lo puedes en encontrar en el [branch source](https://github.com/devOpsCR/devopscr.github.io/tree/source).
-Para colaborar con el desarrollo del sitio y/o publicar árticulos sobre devOps sigues la [guía para contribuciones](https://github.com/devOpsCR/devopscr.github.io/blob/source/contribuciones.md)
+Para colaborar con el desarrollo del sitio y/o publicar árticulos sobre devOps sigue la [guía para contribuciones](https://github.com/devOpsCR/devopscr.github.io/blob/source/contribuciones.md).
 
 ## Ideas y consultas
 Utilizamos el [issue tracker](https://github.com/devOpsCR/foro/issues) como foro para conversar sobre ideas y responder preguntas relacionadas a devOps Costa Rica
