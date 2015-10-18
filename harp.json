@@ -8,7 +8,7 @@
     "github": "devopscr",
     "site_url": "http://devopscr.github.io",
     "disqus": {
-      "enabled": false,
+      "enabled": true,
       "shortname": "devopscr"
     },
     "sitemap": {
