@@ -1,0 +1,13 @@
+if current.path[0] == "posts"
+  - var post = public.posts._data.posts[current.source]
+  - var author = public.posts._data.authors[post.author]
+  .author
+    img.author-image(src='#{author.avatar}')
+    p.author-name 
+      != author.name
+    p.author-bio
+      != author.bio
+    p.author-sites
+      a(href='https://twitter.com/#{author.twitter}', target='_blank') twitter
+      a(href='https://github.com/#{author.github}', target='_blank') github
+      a(href='#{author.website}', target='_blank') website
