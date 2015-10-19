@@ -14,7 +14,7 @@ Para colaborar con el desarrollo del sitio y/o publicar árticulos sobre devOps 
 Utilizamos el [issue tracker](https://github.com/devOpsCR/foro/issues) como foro para conversar sobre ideas y responder preguntas relacionadas a devOps Costa Rica
 
 #### IRC
-Nos puedes visitar en [#devopscr on irc.freenode.net](http://webchat.freenode.net/?channels=devopscr)
+Nos puedes visitar en [#devopscr en irc.freenode.net](http://webchat.freenode.net/?channels=devopscr)
 
 ## Organización
 - [Gabo Esquivel](http://gaboesquivel.com/about) - [@gaboesquivel](https://twitter.com/gaboesquivel)
