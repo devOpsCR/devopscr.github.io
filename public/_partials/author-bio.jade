@@ -1,5 +1,5 @@
-if current.path[0] == "posts"
-  - var post = public.posts._data.posts[current.source]
+- var post = public.posts._data.posts[current.source]
+if current.path[0] == "posts" && post
   - var author = public.posts._data.authors[post.author]
   .author
     img.author-image(src='#{author.avatar}')
