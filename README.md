@@ -25,7 +25,7 @@ Y esta el diseño basado en el template [Clean Blog](http://startbootstrap.com/t
 
 ````
 $ git clone git@github.com:devOpsCR/devopscr.github.io.git
-$ cd my-blog
+$ cd devopscr.github.io
 $ harp server -p 9966
 ````
 
