@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-  - '0.10'
+  - '5.8.0'
 before_script:
   - npm install -g harp
   - chmod +x ./scripts/deploy.sh
-script: 
+script:
   - ./scripts/deploy.sh
 notifications:
   irc:
